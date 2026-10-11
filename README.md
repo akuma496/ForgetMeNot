@@ -12,7 +12,7 @@ Use Node.js 18+ and run `npm install` then `npm run dev`. Open the URL printed b
 ## Demo sequence
 
 1. Landing page → **Open the family archive**.
-2. **Open elder app** → **Tell my story** → **Finish my story**. Recording and transcript are simulated.
+2. **Open our app** → **Tell my story** → **Finish my story**. Recording and transcript are simulated.
 3. **Ask the archive** → **How did Grandpa meet Grandma?** → **Where was the wedding?** → source clip.
 4. Ask about a favorite movie → no answer → **Ask Grandpa next time** → **Question queue**.
 5. Explore **Stories**, **Scrapbook**, and **Family tree**.
