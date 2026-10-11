@@ -102,3 +102,35 @@ body{background:#ecf6f9}
 .plan.featured{background:linear-gradient(180deg,#f3ebfa,#fff)}
 .suggestion,.access-row select{background:#ecf6f9}
 .play-line{display:flex;align-items:center;gap:12px}.play-line .waveform{flex:1;min-width:0;overflow:hidden}.play-line .tiny{flex:none}
+/* Our app: the storyteller's page. Large type, one obvious action. */
+.our-app{min-height:100vh;background:var(--paper);font-size:20px;line-height:1.6;color:var(--ink)}
+.our-app.large{font-size:24px}
+.oa-bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 32px;background:#fff;border-bottom:1px solid var(--line)}
+.oa-tools{display:flex;align-items:center;gap:18px}.oa-tools .text-button{font-size:16px}
+.oa-toggle{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 20px;border:2px solid var(--green);border-radius:30px;background:#fff;color:var(--green);font-size:16px;font-weight:600}
+.oa-toggle[aria-pressed=true]{background:var(--green);color:#fff}.oa-toggle .icon{width:18px;height:18px}
+.oa-main{max-width:760px;margin:0 auto;padding:44px 24px 70px}
+.oa-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:52px 44px;text-align:center;box-shadow:0 18px 44px #38423a14}
+.oa-hello{display:flex;align-items:center;justify-content:center;gap:14px;font-size:1.05em;font-weight:600}.oa-hello p{margin:0}.oa-hello .avatar{width:56px;height:56px}
+.oa-label{margin:26px 0 6px;color:#4b564e;font-size:.9em}
+.oa-question,.oa-title{font-family:var(--serif);font-weight:500;line-height:1.25;margin:0 0 34px;color:var(--ink);font-size:2.1em}
+.oa-title{margin-bottom:14px;font-size:1.9em}
+.oa-sub{margin:20px 0;color:#4b564e;font-size:.95em}
+.oa-big{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-width:min(100%,360px);min-height:84px;padding:20px 34px;border:0;border-radius:24px;background:var(--green);color:#fff;font-size:1.15em;font-weight:650;box-shadow:0 10px 26px #6e4b9b40;transition:transform .15s,background .15s}
+.oa-big:hover{background:#5c3d86;transform:translateY(-2px)}.oa-big:focus-visible{outline:4px solid var(--teal);outline-offset:4px}
+.oa-big.record{width:min(100%,360px);padding:34px}
+.oa-ring{display:grid;place-items:center;width:104px;height:104px;border-radius:50%;background:#ffffff26;box-shadow:0 0 0 12px #ffffff14}.oa-ring .icon{width:50px;height:50px}
+.oa-big.stop{flex-direction:row;background:var(--teal);box-shadow:0 10px 26px #55827640}.oa-big.stop:hover{background:#456b60}.oa-big .icon{width:28px;height:28px}
+.oa-link{display:block;margin:18px auto 0;min-height:52px;padding:0 24px;background:none;border:0;color:var(--green);font-size:.85em;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.oa-timer{font-family:var(--serif);font-size:3.4em;line-height:1.1;margin:26px 0 18px}
+.oa-card .waveform{margin:0 auto 34px;justify-content:center}
+.oa-check{width:96px;height:96px;background:#e3f0ea;color:var(--teal);margin:0 auto 26px}.oa-check .icon{width:44px;height:44px}
+.oa-transcript{font-size:.8em;text-align:left;margin:26px 0 8px;line-height:1.7}.oa-note{font-size:.7em;color:#4b564e;margin:0 0 30px}
+.oa-safe{display:flex;align-items:center;justify-content:center;gap:10px;margin:26px 0 38px;font-size:.8em;color:#4b564e}.oa-safe .icon{width:20px;height:20px;color:var(--teal)}
+.oa-steps{list-style:none;counter-reset:s;display:grid;gap:14px;padding:0;margin:0}
+.oa-steps li{counter-increment:s;display:flex;gap:16px;align-items:flex-start;padding:18px 22px;background:#fff;border:1px solid var(--line);border-radius:18px;font-size:.8em}
+.oa-steps li:before{content:counter(s);flex:none;width:36px;height:36px;border-radius:50%;background:#e9def5;color:#5c3d86;display:grid;place-items:center;font-weight:700}
+.oa-demo{text-align:center;margin-top:34px;font-size:.7em;color:#4b564e}
+.our-app .toast,.our-app~#toast{font-size:16px}
+@media(max-width:700px){.oa-bar{padding:14px 18px}.oa-tools{gap:8px}.oa-tools .text-button{display:none}.oa-main{padding:22px 14px 50px}.oa-card{padding:34px 20px;border-radius:22px}.our-app{font-size:19px}.our-app.large{font-size:22px}}
+.oa-question,.oa-title,.oa-timer{letter-spacing:0}
