@@ -16,7 +16,7 @@ Use Node.js 18+ and run `npm install` then `npm run dev`. Open the URL printed b
 3. **Ask the archive** → **How did Grandpa meet Grandma?** → **Where was the wedding?** → source clip.
 4. Ask about a favorite movie → no answer → **Ask Grandpa next time** → **Question queue**.
 5. Explore **Stories**, **Scrapbook**, and **Family tree**.
-6. **Voice timeline** for Raj; switch the family selector to Maya to view the changing-baseline scenario. Both charts are hardcoded and clinically unvalidated.
+6. **Voice patterns** for Raj (Typical), then switch the scenario to Gradual change. Use the date slider to watch the baseline build and the status change. All values come from a seeded generator and are clinically unvalidated.
 7. **Privacy & access** → toggle timeline consent off; check that the timeline is hidden. Export downloads demo transcripts and metadata.
 
 ## Edit for your presentation
@@ -38,4 +38,4 @@ Import this source folder into a Git repository and deploy it on Vercel with **O
 
 ## Prototype limitations
 
-Changes live in browser memory and reset on reload. Permissions simulate product behavior and do not secure a real archive. No private user data should be entered. Voice charts are illustrative, do not derive from audio, and do not indicate health status. Four example baseline sessions are only a presentation fixture, never a validated minimum. Sample photography is illustrative and sourced from Unsplash.
+Changes live in browser memory and reset on reload. Permissions simulate product behavior and do not secure a real archive. No private user data should be entered. Voice patterns come from a seeded demo generator, do not derive from audio, and do not indicate health status. The 14-recording baseline is a product rule shown in the demo, not a validated minimum. Sample photography is illustrative and sourced from Unsplash.

@@ -2,5 +2,5 @@
   "name":"forgetmenot-demo",
   "version":"1.0.0",
   "private":true,
-  "scripts":{"dev":"npx --yes serve dist","build":"node --check dist/app.js && node --check dist/mock-data.js","start":"npx --yes serve dist"}
+  "scripts":{"dev":"npx --yes serve dist","build":"node --check dist/app.js && node --check dist/mock-data.js && node --check dist/voice.js","start":"npx --yes serve dist"}
 }

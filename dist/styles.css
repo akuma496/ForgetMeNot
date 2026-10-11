@@ -134,3 +134,46 @@ body{background:#ecf6f9}
 .our-app .toast,.our-app~#toast{font-size:16px}
 @media(max-width:700px){.oa-bar{padding:14px 18px}.oa-tools{gap:8px}.oa-tools .text-button{display:none}.oa-main{padding:22px 14px 50px}.oa-card{padding:34px 20px;border-radius:22px}.our-app{font-size:19px}.our-app.large{font-size:22px}}
 .oa-question,.oa-title,.oa-timer{letter-spacing:0}
+/* Phone header: logo + demo button on one row, links on a second row with a fade hint */
+@media(max-width:700px){
+.public-nav{display:grid;grid-template-columns:1fr auto;align-items:center;gap:2px 12px;padding:14px 18px 6px}
+.public-nav .brand{font-size:22px}
+.nav-right{gap:0}.nav-right .button{padding:10px 14px;font-size:13px;min-height:44px}.nav-right .button .icon{display:none}
+.public-nav nav{grid-column:1/-1;order:0;display:flex;gap:6px;overflow-x:auto;white-space:nowrap;margin:0 -18px;padding:0 18px;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+.public-nav nav a{font-size:14.5px;padding:0 10px;min-height:44px;border-radius:22px}
+.public-nav nav a:first-child{padding-left:0}
+.promise-strip{position:relative}
+.hero-trust{margin-bottom:6px}
+}
+@media(max-width:700px){.public-nav .brand{grid-column:1;grid-row:1}.nav-right{grid-column:2;grid-row:1}.public-nav nav{grid-row:2}}
+.chart .point.out{fill:#c0924f;stroke:#fff;stroke-width:2}
+
+/* Hero headline: three lines */
+.hero h1{font-size:clamp(38px,4.7vw,66px);line-height:1.1}.hero h1 span{display:block}
+/* Voice patterns */
+.vtop{display:flex;justify-content:space-between;align-items:center;gap:16px 28px;flex-wrap:wrap;margin-bottom:20px}
+.seg{display:inline-flex;background:#fff;border:1px solid var(--line);border-radius:30px;padding:4px}
+.seg-btn{min-height:42px;padding:0 20px;border:0;background:none;border-radius:26px;font-weight:600;color:#4b564e}
+.seg-btn.on{background:var(--green);color:#fff}
+.vasof label{display:flex;gap:10px;align-items:center;font-size:14px;flex-wrap:wrap}.vasof output{font-weight:700;min-width:96px}
+.vasof input[type=range]{width:min(340px,70vw);accent-color:var(--green);min-height:44px}
+.vtabs{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 6px}
+.vtab{min-height:44px;padding:0 20px;border-radius:26px;border:1px solid var(--line);background:#fff;font-weight:600;color:var(--ink)}
+.vtab[aria-selected=true]{background:var(--green);border-color:var(--green);color:#fff}
+.chart .rec{fill:#a881cf;fill-opacity:.5;stroke:none;cursor:pointer;transition:r .1s,fill-opacity .1s}
+.chart .rec:hover,.chart .rec:focus{fill-opacity:1;r:5.5;outline:none}
+.chart .med{fill:none;stroke:#6e4b9b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.chart .med.out{stroke:#b9822f}
+.chart .band{fill:#e9def5;fill-opacity:.85}.chart .base{stroke:#6e4b9b;stroke-width:1;stroke-dasharray:3 4;opacity:.7}
+.chart .basemark{stroke:#558276;stroke-width:1.5;stroke-dasharray:2 4}.chart .flag{stroke:#b9822f;stroke-width:1.5;stroke-dasharray:4 4}
+.chart .bandlabel{fill:#5c3d86;font-size:12px}.chart .flaglabel{fill:#805d29;font-size:12px;font-weight:600}.chart .axisunit{fill:#4b564e;font-size:12px}
+.chart .waiting{fill:#4b564e;font-size:20px;font-family:var(--serif)}
+.legend-line{display:inline-block;width:20px;height:3px;border-radius:2px;background:#6e4b9b;vertical-align:middle;margin-right:6px}
+.legend-band{display:inline-block;width:20px;height:10px;border-radius:3px;background:#e9def5;vertical-align:middle;margin-right:6px}
+.vfoot{font-size:13px;color:#4b564e;margin:14px 0 0}
+.vsafety{display:flex;gap:10px;align-items:center;margin:24px 0 18px;font-size:14px;color:#4b564e}.vsafety .icon{width:20px;height:20px;color:var(--teal);flex:none}
+.metric-card{cursor:pointer;transition:box-shadow .15s}.metric-card.sel{outline:2px solid var(--blue);outline-offset:-2px}
+.metric-card .spark{width:100%;height:30px;margin-top:12px;display:block}
+.info-tip{position:relative;display:inline-flex;vertical-align:middle;margin-left:8px;color:var(--teal);cursor:help;border-radius:50%}
+.info-tip .icon{width:16px;height:16px}
+.info-tip .tip{display:none;position:absolute;z-index:6;left:50%;bottom:140%;transform:translateX(-50%);width:270px;background:#38423a;color:#fff;font-size:13px;line-height:1.55;padding:11px 13px;border-radius:10px;font-weight:400;letter-spacing:0;text-align:left}
+.info-tip:hover .tip,.info-tip:focus .tip{display:block}
