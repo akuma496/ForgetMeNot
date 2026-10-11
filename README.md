@@ -11,8 +11,8 @@ Use Node.js 18+ and run `npm install` then `npm run dev`. Open the URL printed b
 
 ## Demo sequence
 
-1. Landing page → **Open the family archive**.
-2. **Open our app** → **Tell my story** → **Finish my story**. Recording and transcript are simulated.
+1. Landing page → **Sign in** → **Continue with the demo family** (the Tekwani archive), or **Create account** to build a new profile from scratch. Any input works. Nothing is saved, and a reload or **Sign out** wipes the account.
+2. **Open our app** → **Tell my story** → **I’m finished**. Recording and transcript are simulated. In a new account, the recording appears in Stories and moves the voice-patterns baseline from 0 toward 14.
 3. **Ask the archive** → **How did Grandpa meet Grandma?** → **Where was the wedding?** → source clip.
 4. Ask about a favorite movie → no answer → **Ask Grandpa next time** → **Question queue**.
 5. Explore **Stories**, **Scrapbook**, and **Family tree**.

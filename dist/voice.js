@@ -41,6 +41,7 @@
       label: 'Typical', seed: 450,
       base: { pace: 130, pause: 0.8, latency: 1.3, pitch: 3.0 }
     },
+    empty: { label: 'New account', seed: 1, empty: true, base: { pace: 130, pause: 0.8, latency: 1.3, pitch: 3.0 } },
     gradual: {
       label: 'Gradual change', seed: 3056,
       base: { pace: 118, pause: 0.9, latency: 1.6, pitch: 2.8 },
@@ -77,6 +78,7 @@
   function generate(key) {
     if (cache[key]) return cache[key];
     const sc = SCENARIOS[key], r = mulberry32(sc.seed), recs = [];
+    if (sc.empty) { cache[key] = recs; return recs; }
     let id = 0;
     for (let d = START; d <= END; d += DAY) {
       const dow = new Date(d).getUTCDay();
@@ -157,7 +159,7 @@
   // Positions of the whole series, used so the chart scale stays steady while scrubbing through dates.
   function range(key, m) {
     const v = generate(key).filter(eligible).map(r => r.values[m]);
-    return [Math.min.apply(null, v), Math.max.apply(null, v)];
+    return v.length ? [Math.min.apply(null, v), Math.max.apply(null, v)] : [0, 1];
   }
 
   const api = { METRICS, ORDER, SCENARIOS, START, END, DAY, BASELINE_N, WINDOW, RUN_DAYS, CLEAR_DAYS, generate, analyze, range, median, mad, eligible };
